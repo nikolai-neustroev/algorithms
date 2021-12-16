@@ -46,15 +46,10 @@ class MyCircularQueue:
 
 
 if __name__ == "__main__":
-    from pprint import pprint
     my_circular_queue = MyCircularQueue(3)
-    pprint(vars(my_circular_queue))
     assert my_circular_queue.enQueue(1) is True
-    pprint(vars(my_circular_queue))
     assert my_circular_queue.enQueue(2) is True
-    pprint(vars(my_circular_queue))
     assert my_circular_queue.enQueue(3) is True
-    pprint(vars(my_circular_queue))
     assert my_circular_queue.enQueue(4) is False
     assert my_circular_queue.Rear() == 3
     assert my_circular_queue.isFull() is True
