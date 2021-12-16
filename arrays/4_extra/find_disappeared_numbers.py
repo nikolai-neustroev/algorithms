@@ -2,11 +2,10 @@ from typing import List
 
 
 def find_disappeared_numbers(nums: List[int]) -> List[int]:
-        for n in nums:
-            if nums[abs(n)-1] > 0: 
-                nums[abs(n)-1] *= -1
-            print(nums)
-        return [i+1 for i in range(len(nums)) if nums[i]>0]
+    for n in nums:
+        if nums[abs(n)-1] > 0: 
+            nums[abs(n)-1] *= -1
+    return [i+1 for i in range(len(nums)) if nums[i]>0]
 
 
 if __name__ == '__main__':
